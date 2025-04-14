@@ -1,0 +1,14 @@
+SELECT c.countryid, c.countryName, s.stateName
+FROM Country c
+JOIN State s
+ON c.countryid = s.countryid;
+
+SELECT c.countryid, c.countryName, s.stateName
+FROM Country c
+LEFT JOIN State s
+ON c.countryid = s.countryid;
+
+SELECT c.countryid, c.countryName, s.stateName
+FROM State s
+LEFT JOIN Country c
+ON c.countryid = s.countryid;
